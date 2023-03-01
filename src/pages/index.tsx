@@ -8,7 +8,17 @@ import { api } from "../utils/api";
 const Home: NextPage = () => {
   // const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
-  return <div>Hello World!!</div>;
+  return (
+    <div className="flex h-screen w-screen flex-col items-center justify-center">
+      <h1 className="text-2xl">Which Pokémon is rounder?</h1>
+      <div className="p-2" />
+      <div className="flex max-w-2xl items-center justify-between rounded border p-8">
+        <div className="h-16 w-16 bg-red-200"></div>
+        <div className="p-8">Vs</div>
+        <div className="h-16 w-16 bg-red-200"></div>
+      </div>
+    </div>
+  );
 };
 
 export default Home;
